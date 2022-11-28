@@ -1,0 +1,38 @@
+img {
+    width: 100%;
+}
+
+.btn_card {
+    width: 100%;
+    border-radius: 25px;
+    background: #e0e0e0;
+    padding: 15px;
+    box-shadow: 6px 6px 12px #a4a4a4,
+    
+        -6px -6px 12px #ffffff;
+        .btn_card_btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+        button{
+            width: 60% !important;
+            background-color: #6C63FF;
+            color: #ffffff;
+            border: none;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+}
+.form-control {
+    background: transparent;
+    border: none;
+    input{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: none;
+    }
+}
