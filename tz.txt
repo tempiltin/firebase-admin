@@ -1,0 +1,18 @@
+navbar++
+errorpage++
+login register +++
+
+
+
+products++++++
+contact++++++++
+about++++++++++
+REDUX
+cart++++++++++
+
+Firebase CRUD
+
+create 
+Read
+update
+delete

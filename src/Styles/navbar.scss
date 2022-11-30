@@ -1,0 +1,84 @@
+// Root ======================================
+$dark:black;
+
+// Root ======================================
+
+nav {
+    width: 100%;
+    height: 80px;
+    border-radius: 0px;
+    background: #f1f1f1;
+    box-shadow: 5px 5px 5px #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        img{
+            width: 80px;
+        }
+    }
+    ul{
+        margin: 0;
+        li{
+            padding: 0 25px;
+            a{
+                color:$dark ;
+            }
+        }
+    }
+}
+.nav_btn{
+    border: none;
+     svg{
+        font-size: 28px;
+        transition: all 500ms;
+
+     }
+}
+.close svg{
+    transform: rotate(45deg) !important;
+}
+aside{
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+   transition: all 700ms;
+    border-radius: 0px;
+    background: #f1f1f1;
+    box-shadow: -2px 0px 0px #bebebe;
+    ul{
+        width: 100%;
+
+        li{
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                font-size: 24px;
+                color: $dark;
+                &:hover{
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+.aside_True{
+    top: 0;
+    right: 0;
+}
+.aside_False{
+    top: 0;
+    right: -100%;
+}
+.w_80{
+    width: 100%;
+    height: 80px;
+}
+
+ .close:hover svg{
+ 
+     transform: rotate(0deg) !important;
+}
