@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500;600;700;800;900&display=swap');
-
+$dark:black;
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +7,48 @@
     list-style: none !important;
     font-family: 'Roboto Slab', serif;
 }
-body{
+
+body {
     position: relative;
+    overflow-x: hidden;
+}
+
+.returnButton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    background: #fffdfd;
+    box-shadow: 3px 3px 3px #cecece,
+    inset -3px -3px 3px #f2f2f2;
+        transition: all 500ms;
+        &:hover{
+            box-shadow: inset 3px 3px 3px #cecece,
+            inset  -3px -3px 3px #f2f2f2;
+        background:#fff;
+        border: 1px solid rgb(255, 255, 255);
+        }
+        svg{
+            transform: rotate(-90deg);
+        }
+}
+
+.buy_btn{
+    padding: 0.6rem 2rem;
+    border:none;
+    a{
+        font-size: 32px;
+        color: $dark;
+        &:hover{
+            color:$dark;
+        }
+
+    }
+    border-radius: 15px;
+background: #e0e0e0;
+box-shadow:  6px 6px 11px #cecece,
+             -6px -6px 11px #f2f2f2;
 }

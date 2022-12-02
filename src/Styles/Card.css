@@ -1,0 +1,9 @@
+.section_card {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+.section_card h2 {
+  font-size: 24px;
+  font-style: italic;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,13 +1,13 @@
 navbar++
 errorpage++
-login register +++
+login register+++
 
 
 
 products++++++
-contact++++++++
-about++++++++++
-REDUX
+contact+++++++
+about+++++++++
+REDUX+++++++++
 cart++++++++++
 
 Firebase CRUD
