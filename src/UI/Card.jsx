@@ -1,11 +1,11 @@
 import React from 'react'
 import img from "../Assets/Audio/android.svg"
 import "../Styles/Card.css"
-const Card = () => {
+const Card = ({item}) => {
   return <div className="section_card">
-     <img src={img} alt="" />
-     <h2>Name</h2>
-     <h3>1200$</h3>
+     <img src={item.img} alt={Date()+item.img} />
+     <h2>{item.name}</h2>
+     <h3>${item.price}</h3>
      <button>Buy now</button>
   </div>
 }

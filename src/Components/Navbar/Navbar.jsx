@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineBars } from "react-icons/ai";
 import { motion } from 'framer-motion';
@@ -9,6 +9,22 @@ import Sedbar from './Sedbar';
 import navDB from '../../DB/navDB';
 const Navbar = () => {
     const [state, setState] = useState(false);
+    const navbarRef = useRef(null);
+ 
+    const stickyNavbarFunc = ()=>{
+        console.log(" stickyNavbarFunc")
+        window.addEventListener("scroll", () => {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                navbarRef.current.classList.add("navbar_sticky")
+            } else {
+                navbarRef.current.classList.remove("navbar_sticky")
+            }
+          })
+    }
+    useEffect(()=>{
+        stickyNavbarFunc()
+        return ()=> window.removeEventListener("scroll" , stickyNavbarFunc)
+    })
 
     const handleClick = (event) => {
         event.preventDefault()
@@ -18,9 +34,9 @@ const Navbar = () => {
             setState(true)
         }
     }
-
+   
     return <>
-        <nav id='navTop'>
+        <nav id='navTop' ref={navbarRef} className=''>
             <div className="container">
                 <div className="row justify-content-between align-items-center">
                     <div className="col-auto">

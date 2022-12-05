@@ -17,7 +17,7 @@ const Home = () => {
       <Header />
       <SectionProducts />
 
-      <form ref={form} onSubmit={sendEmail} className='row '>
+      {/* <form ref={form} onSubmit={sendEmail} className='row '>
                                   <div className="col-lg-6">
                                       <div className="form-group">
                                           <label htmlFor="contact-name" className="contact-name">SIZNING ISMINGIZ</label>
@@ -54,7 +54,7 @@ const Home = () => {
                                         </button>
                                     </div>
 
-                                </form>
+                                </form> */}
   </Helmet>
 }
 
